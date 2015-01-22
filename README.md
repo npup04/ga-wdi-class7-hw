@@ -28,7 +28,7 @@ Follow the steps below to create a webapp containing 10 cars with random years b
 * Restart the rails server:
   - ``` $ rails server ```
   Note: if you browse to http://localhost:3000/cars you should expect see a Routing Error: No route matches [GET] “/cars"
-$ edit the routes.db file, add the code:
+$ edit the routes.db file, add the code to the 2nd line:
   - ``` get ‘cars’, to: ’cars#index' ```
 * add a cars controller:
     - create a cars_controller.rb file in the controllers dir
@@ -59,8 +59,10 @@ Note: you should expect to see your test text on the web page: Hello!
      - ```rails generate migration CreateCars make model year:integer```
      (the default is string, so you can skip specifying string with make & model)
   - expected Terminal output:
-      - ``` invoke  active_record
-      create    db/migrate/xxxxxxxxxxxxxxx_create_cars.rb ```
+```
+invoke  active_record
+create    db/migrate/xxxxxxxxxxxxxxx_create_cars.rb
+```
      - this creates a migrate dir in the db dir, containing the  …create_cars.rb file with the table & columns that will be created when you run the next command.
 
 * Run rake migrations
