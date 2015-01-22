@@ -90,7 +90,8 @@ Note: you should expect to see your test text on the web page: Hello!
 
 * Update the view
   - In index.html.erb in app/views/cars
-```<h2>Cars</h2>
+```
+<h2>Cars</h2>
   <table border = 1>
    <% @cars.each do |cars| %>
     <tr>
@@ -99,7 +100,8 @@ Note: you should expect to see your test text on the web page: Hello!
       <td><%= cars.year %></td>
     </tr>
     <% end %>
-</table> ```
+</table>
+```
 
 * Start the rails server
   $ rails server
