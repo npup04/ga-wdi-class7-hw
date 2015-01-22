@@ -104,9 +104,11 @@ Note: you should expect to see your test text on the web page: Hello!
     <% end %>
 </table>
 ```
-
-* Start the rails server
+* Restart postgres
+  ``` $ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start ```
+* Restart the rails server
   ``` $ rails server ```
 
 * Reload http://localhost:3000/cars in your browser
-Note: you should expect to see the 10 cars displayed on the web page
+Note: you should expect to see the 10 cars displayed on the web page in a table:
+
