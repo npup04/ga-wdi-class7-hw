@@ -105,7 +105,7 @@ Note: you should expect to see your test text on the web page: Hello!
 </table>
 ```
 * Restart postgres
-  ``` $ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start ```
+  - ``` $ pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start ```
 * Restart the rails server
   ``` $ rails server ```
 
