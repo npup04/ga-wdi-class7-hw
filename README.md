@@ -89,11 +89,11 @@ Note: you should expect to see your test text on the web page: Hello!
 
 * Update the controller
   - In cars_controller.rb remove your Hello! content add the following code:
-       ```
-       def index
-         @cars = Car.all #list all objects created from the class
-       end
-       ```
+```
+def index
+  @cars = Car.all #list all objects created from the class
+end
+```
 
 * Update the view
   - In index.html.erb in app/views/cars
