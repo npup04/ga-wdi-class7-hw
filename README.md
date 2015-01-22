@@ -73,12 +73,14 @@ Note: you should expect to see your test text on the web page: Hello!
   - create a car.rb file in app/models/
      Note: car.rb is intentionally singular b/c it is a rails convention
   - add the following code:
-     - ```class Song < ActiveRecord::Base
-     end ```
+     ```
+     class Song < ActiveRecord::Base
+     end
+     ```
 
 * now create some cars in the db
   - in the db/seeds.db file, add the following code so that random years of vehicles are created between the year 1900 and 2014 for 10 cars:
-     - ``` 1.upto(10) do |num|
+     ``` 1.upto(10) do |num|
        Car.create(make: "Make_#{num}", model: "Model_#{num}", year: rand(1900..2014))
      end ```
 
@@ -87,9 +89,11 @@ Note: you should expect to see your test text on the web page: Hello!
 
 * Update the controller
   - In cars_controller.rb remove your Hello! content add the following code:
-       - ``` def index
+       ```
+       def index
          @cars = Car.all #list all objects created from the class
-       end ```
+       end
+       ```
 
 * Update the view
   - In index.html.erb in app/views/cars
