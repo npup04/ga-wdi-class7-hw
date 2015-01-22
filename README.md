@@ -33,7 +33,7 @@ $ edit the routes.db file, add the code:
 * add a cars controller:
     - create a cars_controller.rb file in the controllers dir
     - add the class CarsController & the index method:
-    - ```
+    ```
      class CarsController < ApplicationController
         #GET /cars
         #This is the index action. This will be invoked to view all the cars.
@@ -44,7 +44,8 @@ $ edit the routes.db file, add the code:
 
 * Reload http://localhost:3000/cars in your browser
 Note: you can expect to see a Template is missing error. OK - continue on ...
-* create a cars folder in the app/views/ dir
+
+* Create a cars folder in the app/views/ dir
   - in the cars dir, create the view in the cars dir:
      - index.html.erb
      - add some test text, like: ``` Hello! ```
