@@ -1,0 +1,11 @@
+<!-- Hello! -->
+<h2>Cars</h2>
+  <table border = 1>
+   <% @cars.each do |cars| %>
+    <tr>
+      <td><%= cars.make %></td>
+      <td><%= cars.model %></td>
+      <td><%= cars.year %></td>
+    </tr>
+    <% end %>
+</table>
