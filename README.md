@@ -78,11 +78,13 @@ Note: you should expect to see your test text on the web page: Hello!
      end
      ```
 
-* now create some cars in the db
+* now create some cars in the database
   - in the db/seeds.db file, add the following code so that random years of vehicles are created between the year 1900 and 2014 for 10 cars:
-     ``` 1.upto(10) do |num|
-       Car.create(make: "Make_#{num}", model: "Model_#{num}", year: rand(1900..2014))
-     end ```
+```
+1.upto(10) do |num|
+  Car.create(make: "Make_#{num}", model: "Model_#{num}", year: rand(1900..2014))
+end
+```
 
   - Run rake to populate the database with the resulting data from the seeds.db file
     - ``` $ rake db:seed ```
